@@ -1,0 +1,31 @@
+{
+  "name": "web_project",
+  "version": "1.0.0",
+  "description": "backend server",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd client && npm run start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Juhyung98/web_project.git"
+  },
+  "author": "web_programming_group_15",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "iconv": "^3.0.0",
+    "iconv-lite": "^0.5.2",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "mysql": "^2.18.1",
+    "node-gyp": "^7.1.2",
+    "nodemon": "^2.0.6",
+    "rebuild": "^0.1.2"
+  }
+}
